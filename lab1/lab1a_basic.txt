@@ -1,0 +1,84 @@
+LAB 1 — First Steps with Ollama
+Running Your First Local AI Model
+
+🎯 Lab Goal 
+
+By the end of this lab, you will:
+
+✅ Install Ollama
+✅ Download a small AI model
+✅ Run your first AI prompt locally
+✅ See that AI is just another system you can manage
+✅ Create a T-800 who will teach Keisha a lesson.
+
+No coding required.
+No AI knowledge required.
+Just follow steps.
+
+🧠 Before We Start — Important Mindset
+
+This lab is NOT about:
+
+    Becoming an AI expert
+    Understanding machine learning math
+    Writing complex code
+    Paying child support, oh hell no.
+
+This lab IS about:
+
+👉 Learning how to run an AI service on a computer.
+
+Just like you learned to run:
+    Docker
+    MySQL
+    Nginx
+
+This is simply another service.
+
+🖥️ Step 1 — Install Ollama
+
+🪟 Windows
+
+Download from:
+https://ollama.com/download
+Run the installer.
+
+That’s it.
+
+🍎 macOS
+
+Download from:
+https://ollama.com/download
+Drag to Applications.
+
+🐧 Linux (Ubuntu)
+
+      Run:  curl -fsSL https://ollama.com/install.sh | sh
+
+✅ Step 2 — Verify Installation
+
+Open a terminal and run:
+      ollama --version
+
+Expected output:
+    ollama version X.X.X
+
+If you see a version number:
+    👉 You succeeded.
+
+This means:
+
+You have installed an AI runtime. Congrats, Skynet is watching you.
+
+Just like installing:
+Docker Engine
+Kubernetes CLI
+Terraform
+
+If you see Lizzo:
+    👉 Bruh...
+
+She will eat you for dinner.
+
+
+
