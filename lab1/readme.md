@@ -3,14 +3,10 @@ What is Ollama?
 Ollama is a tool that allows you to run large language models (LLMs) locally on your own machine.
 
 Instead of calling cloud APIs like:
-
-OpenAI
-
-Azure OpenAI
-
-AWS Bedrock
-
-Google Vertex AI
+        OpenAI
+        Azure OpenAI
+        AWS Bedrock
+        Google Vertex AI
 
 Ollama lets you do this:
 
