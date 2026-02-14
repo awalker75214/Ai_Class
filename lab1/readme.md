@@ -175,10 +175,10 @@ Moving from “AI user”
 
 To “AI engineer”
 
-💬 Motivation Message For Students
-
+💬 Motivation Message:
 At 2 AM, when you wonder:
 
+"Do you know where your woman is?"
 “Should I just give up and work somewhere easier? I mean Keisha got that waffle house booty."
 
 Remember:
