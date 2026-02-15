@@ -1,0 +1,42 @@
+🖥️ Step 1 — Ensure Ollama Is Running
+
+Run:
+    ollama serve
+
+Most systems auto-start it, but this guarantees it.
+
+You should see:
+    Listening on 127.0.0.1:11434
+
+This means:
+👉 AI API server is running locally.
+
+🧠 Explain to Students
+
+This is exactly like starting:
+    Nginx
+    Docker daemon
+    MySQL service
+
+You just started an AI service.
+
+🧪 Step 2 — Test API Connectivity
+
+Run:
+    curl http://localhost:11434
+
+Expected output:
+    Ollama is running
+
+🧠 What This Means
+
+You just confirmed:
+    A local API server exists
+    It is reachable
+    It is ready to receive requests
+
+This is standard cloud engineering validation.
+
+
+
+
