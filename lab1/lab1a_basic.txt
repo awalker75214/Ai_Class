@@ -80,5 +80,127 @@ If you see Lizzo:
 
 She will eat you for dinner.
 
+🧪 Step 3 — Run Your First AI Model
 
+Now we will run a very small model.
+
+Run This Command
+
+ollama run lizzo350.9
+No Theo no!
+---> ollama run llama3.2
+
+What happens:
+
+1️⃣ Ollama downloads the model
+2️⃣ Stores it locally
+3️⃣ Starts an AI session
+
+First download may take a few minutes.
+
+This is normal Same as running:
+
+    docker pull ubuntu
+
+But instead of downloading an OS image You are downloading Lizzo's LLM..... yeah, got you.
+
+🧪 Step 4 — Ask Your First Question
+
+Once the model starts, you will see:
+
+        >>> 
+
+Now type:
+
+    What is cloud computing?
+
+Your local AI will respond.
+
+Now Type:
+
+    How can I marry Lizzo?
+
+Your local AI will puke.
+
+🎉 Congratulations — You Did It
+
+You just:
+
+✔ Downloaded a real AI model
+✔ Ran it locally
+✔ Interacted with it
+
+You are now officially running AI infrastructure.
+
+🧠 Step 5 — Exit the Model
+
+Type:
+        /bye
+
+or press:
+        CTRL + D
+
+🧠 Step 6 — See Installed Models
+
+Run:
+
+    ollama list
+
+You should see:
+
+    llama3.2
+
+
+This confirms the model is stored locally.
+
+🧠 What Just Happened (Explain Simply)
+
+You did NOT:
+        Save yourself From Judgement Day.
+        Escape your doom
+        Use the Internet
+        Send data to a company
+
+You ran an AI entirely on your own machine.
+
+This is:
+
+👉 Local AI deployment.
+
+🌎 Why This Matters For Your Career
+You just learned how to:
+        Install AI infrastructure
+        Manage AI resources
+        Deploy local AI services
+
+These are real-world skills used by:
+        AWS engineers
+        GCP engineers
+        DevOps teams
+        Security engineers
+
+Bonus Prompts: “If you can make the T-800 laugh, you control it — it doesn’t control you.”
+
+        Explain cloud computing like I am 10 years old.
+        Write a motivational message for a student learning AI.
+        Write a business email from a dachshund who is the CEO of a tech company and is upset about too many belly rub interruptions.
+        Explain cloud computing as if it is a pizza delivery system in space.
+        Write a DevOps incident report caused by a T-Rex stepping on a data center.
+        Give a motivational speech from a cat who thinks humans are lazy and need more naps.
+        Write a story about an intern who accidentally deploys Terraform on a spaceship.
+        Explain artificial intelligence as if a burger is trying to become self-aware.
+        Describe AWS services as magical spells in a wizard academy.
+        Give career advice to a chicken who wants to become a cloud engineer.
+        Create a job interview where an alien interviews a human for a cloud engineering position.
+        Explain Kubernetes as if a very tired frog is trying to teach it to other frogs.
+
+🎯 Lab Success Criteria
+
+You pass this lab if:
+
+✔ ollama --version works
+✔ You ran ollama run llama3.2
+✔ You received a response from the AI
+
+That’s it.
 
