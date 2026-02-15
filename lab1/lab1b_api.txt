@@ -37,6 +37,92 @@ You just confirmed:
 
 This is standard cloud engineering validation.
 
+🧪 Step 3 — Send Your First AI API Request
+
+Now we send a JSON request to the model.
+
+Run This Command
+
+        curl http://localhost:11434/api/generate \
+        -d '{
+          "model": "llama3.2",
+          "prompt": "Explain cloud computing in one sentence.",
+          "stream": false
+        }'
+
+🎉 What Happens
+
+You will receive:
+
+        {
+          "response": "Cloud computing is..."
+        }
+
+You just:
+
+✔ Called an AI API
+✔ Sent JSON data
+✔ Received a JSON response
+
+This is EXACTLY how cloud services work.
+
+🧠 Reemmber this
+
+This is no different than calling:
+        AWS Lambda API
+        Azure REST services
+        GCP endpoints
+
+AI is just another service.
+
+🧪 Step 4 — Send a Fun Prompt via API
+
+Try this:
+
+        curl http://localhost:11434/api/generate \
+        -d '{
+          "model": "llama3.2",
+          "prompt": "Write a funny message from a tired cloud engineer.",
+          "stream": false
+        }'
+
+Students love seeing:
+
+👉 AI responses through automation.
+
+🧪 Step 5 — Pretty Print the Output (Optional)
+Install jq if needed:
+
+        sudo apt install jq
+
+Then run:
+
+        curl http://localhost:11434/api/generate \
+        -d '{
+          "model": "llama3.2",
+          "prompt": "What is AWS in simple terms?",
+          "stream": false
+        }' | jq
+
+This formats JSON cleanly.
 
 
+🧠 Why This Matters to you! 
+
+You just learned how to:
+        Send REST API requests
+        Automate AI interactions
+        Integrate AI into systems
+
+This is exactly how companies use AI.
+
+🎯 Lab Success Criteria
+
+You pass if:
+
+✔ curl http://localhost:11434 works
+✔ You sent an API request
+✔ You received a JSON response
+
+That’s it.
 
