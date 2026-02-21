@@ -1,0 +1,77 @@
+Lab Goal (Tell Students)
+
+In this lab you will:
+
+✅ Provide your name and location
+✅ Start an AI-generated nightmare date
+✅ Experience AI as an interactive storytelling engine
+✅ Practice sending dynamic prompts
+
+You are going on a date with Keisha
+
+But…  Something is wrong.
+Very wrong.
+
+Keisha knows where you live..... now you enter.... 
+
+👉 A horror movie narrator
+👉 A chaotic dating simulator
+👉 A zombie apocalypse storyteller
+
+
+Step 1 — Choose Your Inputs
+
+Students must pick:
+    Their name
+    A location
+
+Examples:
+    Keisha — Atlanta coffee shop trick
+    Maria — Paris restaurant
+    Samatha — Tokyo subway
+
+Step 2 — Start the Nightmare Date
+Students replace NAME and LOCATION below.
+
+Run this
+
+    curl http://localhost:11434/api/generate \
+    -d '{
+      "model": "llama3.2",
+      "stream": false,
+      "prompt": "Create a humorous spooky horror story about a nightmare date. The main character is YO MOMMA. The date takes place at CHEWBACCA'S HOUSE. Include light horror movie elements, creepy atmosphere, and a sudden zombie twist. Keep it under 6 sentences and not graphic."
+    }'
+
+Example Filled In
+
+    curl http://localhost:11434/api/generate \
+    -d '{
+      "model": "llama3.2",
+      "stream": false,
+      "prompt": "Create a humorous spooky horror story about a nightmare date. The main character is Alex. The date takes place at an Austin coffee shop. Include light horror movie elements, creepy atmosphere, and a sudden zombie twist. Keep it under 6 sentences and not graphic."
+    }'
+
+What Happens
+
+Students get something like:
+
+You sat nervously at the coffee shop while Keisha stared without blinking.
+The lights flickered and the barista slowly backed away.
+Suddenly, Keisha whispered, “Do you like brains… or just lattes?”
+Outside, people shuffled strangely toward the windows.
+You realized this wasn’t just a bad date — it was a Keisha outbreak.
+
+🎭 Optional Variations (Very Fun)
+Students can modify prompts like:
+
+🧟 Zombie Date at Work
+“Nightmare date at a corporate office during a zombie outbreak”
+
+👻 Haunted Dinner Date
+“Nightmare date at a haunted restaurant where ghosts are the waiters”
+
+🤖 AI Date Gone Wrong
+“Nightmare date with an AI robot that becomes self-aware”
+
+
+
