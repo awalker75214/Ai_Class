@@ -1,0 +1,59 @@
+Step 1 — Start the AI Game Engine
+
+Run this command:
+
+    curl http://localhost:11434/api/generate \
+    -d '{
+      "model": "llama3.2",
+      "stream": false,
+      "prompt": "You are a fantasy dungeon game master. Start a short adventure. Keep responses under 5 sentences. Begin now."
+    }'
+
+Step 2 — Make Your First Move
+Now respond to the AI.
+
+Example command:
+
+curl http://localhost:11434/api/generate \
+-d '{
+  "model": "llama3.2",
+  "stream": false,
+  "prompt": "Continue the dungeon adventure. The player chooses to go left quietly."
+}'
+
+What do you think is happening????
+
+Step 3 — Try Fun Moves
+Let's try commands like:
+
+"prompt": "Continue the adventure. The player throws a shoe at the dragon."
+
+"prompt": "Continue the adventure. The player casts a cloud computing spell."
+
+"prompt": "Continue the adventure. The player tries to order pizza in the dungeon."
+
+
+
+Funny Alternate Game Modes
+
+If you want variety, here are instant game themes.
+
+Students just change the prompt.
+
+👾 Space Explorer Game
+
+“You are a spaceship AI controlling a mission to Mars…”
+
+🧟 Zombie Survival
+
+“You are narrating a zombie apocalypse survival story…”
+
+🐶 Dog Adventure
+
+“You are a dachshund exploring a giant house…”
+
+
+
+
+
+
