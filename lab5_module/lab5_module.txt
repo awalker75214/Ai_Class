@@ -25,6 +25,11 @@ ollama_python_lab/
     cli.py
 
 1) app/config.py — config + env support
+Copy this: https://github.com/BalericaAI/Ai_Class/blob/main/lab5_module/python/config.py
+
+2) 2) app/ollama_client.py — reusable HTTP client + retries
+Copy This: 
+
 
 
 
