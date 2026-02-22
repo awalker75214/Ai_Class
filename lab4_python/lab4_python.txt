@@ -1,0 +1,28 @@
+LAB 4 — Python + Ollama
+Build an Interactive “Nightmare Date” Game Client
+What you’re building
+(Haunted.....)
+
+A tiny terminal app that:
+
+✅ asks for name and location
+✅ generates the Nightmare Date intro
+✅ lets the student type choices (“run”, “hide”, “ask for the check”)
+✅ continues the story each turn
+✅ cleanly exits
+
+0) Pre-Req: Ollama is running
+
+In a terminal (leave it running):
+
+ollama serve
+curl http://localhost:11434
+
+1) Create a folder + file
+mkdir ollama_python_lab
+cd ollama_python_lab
+touch nightmare_date.py
+
+2) Paste this code into nightmare_date.py
+
+
