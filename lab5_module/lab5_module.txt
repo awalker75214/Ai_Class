@@ -1,0 +1,30 @@
+“Production-ish” Python Client for Ollama
+Turn the game into a reusable module + logging + structured output
+You’ll build
+
+    OllamaClient (reusable)
+    Config via env vars + CLI flags
+    Logging to console + file (JSONL)
+    A CLI app that runs the Nightmare Date game
+    Optional: save transcripts to disk
+
+0) Folder layout
+From inside ollama_python_lab/:
+
+    mkdir -p app
+    touch app/__init__.py app/config.py app/ollama_client.py app/nightmare_game.py app/cli.py
+
+You should see this:
+
+ollama_python_lab/
+  app/
+    __init__.py
+    config.py
+    ollama_client.py
+    nightmare_game.py
+    cli.py
+
+1) app/config.py — config + env support
+
+
+
