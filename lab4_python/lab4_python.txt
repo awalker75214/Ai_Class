@@ -25,4 +25,28 @@ touch nightmare_date.py
 
 2) Paste this code into nightmare_date.py
 
+https://github.com/BalericaAI/Ai_Class/blob/main/lab4_python/python/nightmare_date.py
+
+3) Run it
+
+Linux: python3 nightmare_date.py
+Evil Box: python nightmare_date.py
+
+Troubleshooting (the 3 common fails)
+1) “Could not reach Ollama…”
+    Fix: start it in another terminal: ollama serve
+
+2) “model not found”
+    Fix: pull the model once: ollama run llama3.2  Then quit /bye and run Python again.
+
+3) Python not installed
+    Fix: use system Python or install Python 3.11+.
+
+Bonus 
+
+Modify one thing:
+    1) Change MODEL = "llama3.2" to another model they’ve installed
+    2) Change response length: “under 4 sentences”
+    3) Add a “plot twist” requirement: “include a haunted ringtone”
+
 
