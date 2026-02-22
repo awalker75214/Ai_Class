@@ -31,6 +31,9 @@ Copy this: https://github.com/BalericaAI/Ai_Class/blob/main/lab5_module/python/c
 Copy This: https://github.com/BalericaAI/Ai_Class/blob/main/lab5_module/python/ollama_client.py
 
 3) app/nightmare_game.py — game logic (clean + testable)
+Copy: https://github.com/BalericaAI/Ai_Class/blob/main/lab5_module/python/nightmare_game.py
+
+4) app/cli.py — CLI runner + structured JSONL logging
 Copy: 
 
 
