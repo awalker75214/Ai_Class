@@ -34,9 +34,21 @@ Copy This: https://github.com/BalericaAI/Ai_Class/blob/main/lab5_module/python/o
 Copy: https://github.com/BalericaAI/Ai_Class/blob/main/lab5_module/python/nightmare_game.py
 
 4) app/cli.py — CLI runner + structured JSONL logging
-Copy: 
+Copy: https://github.com/BalericaAI/Ai_Class/blob/main/lab5_module/python/cli.py
 
+5) Update your entry point
 
+Run it like this or Go home to Keisha:
+python3 -m app.cli
 
+Optional overrides:
+python3 -m app.cli --name "Keisha" --location "Yo Momma House" --model "llama3.2"
+
+What have you Zombie Victims achieved? 
+    separation of concerns (config vs client vs game vs CLI)
+    retries & timeouts
+    structured logs (JSONL → easy to parse later)
+    transcript persistence
+    a pattern  You Shall Eternally reuse forever in AWS/GCP work
 
 
