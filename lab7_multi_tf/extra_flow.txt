@@ -1,0 +1,42 @@
+# Step 1: Ask the Builder LLM to generate Terraform
+print("Step 1: Generating Terraform with the Builder LLM...\n")
+builder_prompt = build_builder_prompt()
+generated_terraform = call_ollama(BUILDER_MODEL, builder_prompt)
+
+if generated_terraform.startswith("[ERROR]"):
+    print(generated_terraform)
+    return
+
+print("=== GENERATED TERRAFORM ===\n")
+print(generated_terraform)
+print()
+
+save_file("generated_main.tf", generated_terraform)
+print("Saved generated Terraform to generated_main.tf\n")
+
+# Step 2: Ask the Reviewer LLM to review the Terraform
+print("Step 2: Reviewing Terraform with the Reviewer LLM...\n")
+reviewer_prompt = build_reviewer_prompt(generated_terraform)
+review_output = call_ollama(REVIEWER_MODEL, reviewer_prompt)
+
+if review_output.startswith("[ERROR]"):
+    print(review_output)
+    return
+
+print("=== REVIEW REPORT ===\n")
+print(review_output)
+print()
+
+save_file("review_report.txt", review_output)
+print("Saved review report to review_report.txt\n")
+
+# Step 3: Try to extract improved Terraform from the review
+improved_terraform = extract_improved_terraform(review_output)
+
+if improved_terraform:
+    save_file("improved_main.tf", improved_terraform)
+    print("Saved improved Terraform to improved_main.tf\n")
+else:
+    print("No improved Terraform block found in the review output.\n")
+
+print("✅ Demo complete.\n")
