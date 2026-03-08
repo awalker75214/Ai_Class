@@ -57,4 +57,35 @@ Create a new folder:
 
 Paste this into tf_two_llm.py
 
+https://github.com/BalericaAI/Ai_Class/blob/main/lab7_multi_tf/python/tf_two_llm.py
+
+Terraform code to review:
+            {terraform_code}
+
+            """.strip()
+
+def extract_improved_terraform(review_text: str) -> str:
+marker = "IMPROVED_TERRAFORM:"
+start = review_text.find(marker)
+if start == -1:
+return ""
+
+        hcl_start = review_text.find("```hcl", start)
+        if hcl_start == -1:
+            return ""
+        
+        hcl_start += len("```hcl")
+        hcl_end = review_text.find("```", hcl_start)
+        if hcl_end == -1:
+            return ""
+        
+        return review_text[hcl_start:hcl_end].strip()
+
+def save_file(filename: str, content: str):
+with open(filename, "w", encoding="utf-8") as f:
+f.write(content)
+
+def main():
+print("\n☁️ Two-LLM Terraform Pipeline\n")
+
 
