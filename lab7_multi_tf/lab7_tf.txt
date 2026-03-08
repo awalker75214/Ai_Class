@@ -1,0 +1,60 @@
+LAB — Two-LLM Terraform Pipeline
+LLM 1 Builds Terraform, LLM 2 Reviews It
+
+🎯 Lab Goal
+
+By the end of this lab, students will:
+    use one LLM to generate Terraform
+    use a second LLM to review Terraform
+    see how multi-step AI pipelines improve trust
+    understand the beginnings of multi-agentic IaC workflows
+
+🧱 Architecture
+LLM 1 — Builder
+The Builder creates Terraform based on requirements.
+
+Example tasks:
+    VPC
+    public/private subnets
+    S3 bucket
+    EC2 instance
+    security groups
+
+LLM 2 — Reviewer
+The Reviewer checks for:
+    missing resources
+    naming issues
+    missing tags
+    security problems
+    incomplete outputs
+    poor practices
+
+The second LLM should not just say “looks good.”
+It should be trained to think like a strict reviewer.
+
+🏗 Suggested First Scenario
+
+For the first lab, keep the infrastructure scope simple and recognizable.
+
+Scenario: Create Terraform for:
+    1 AWS VPC
+    2 public subnets
+    1 internet gateway
+    1 route table
+    route table associations
+    useful tags
+
+This is easy enough to follow, but rich enough for review.
+
+🗂 Project Setup
+Create a new folder:
+
+    mkdir -p tf_two_llm
+    cd tf_two_llm
+    touch tf_two_llm.py
+
+🐍 Full Python Script
+
+Paste this into tf_two_llm.py
+
+
