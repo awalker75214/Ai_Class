@@ -1,0 +1,28 @@
+""".strip()
+
+def extract_improved_terraform(review_text: str) -> str:
+"""Extract the HCL block from the reviewer output."""
+marker = "IMPROVED_TERRAFORM:"
+marker_index = review_text.find(marker)
+
+      if marker_index == -1:
+          return ""
+      
+      code_start = review_text.find("```hcl", marker_index)
+      if code_start == -1:
+          return ""
+      
+      code_start += len("```hcl")
+      code_end = review_text.find("```", code_start)
+      if code_end == -1:
+          return ""
+      
+      return review_text[code_start:code_end].strip()
+
+def save_file(filename: str, content: str) -> None:
+"""Save text to a file."""
+with open(filename, "w", encoding="utf-8") as file:
+file.write(content)
+
+def main():
+print("\n=== Two-LLM Terraform Demo ===\n")
