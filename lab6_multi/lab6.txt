@@ -45,5 +45,29 @@ Suggested Project StructureL Inside your project folder:
 
 Paste this into zombie_helpdesk.py
 
+https://github.com/BalericaAI/Ai_Class/blob/main/lab6_multi/python/zombie_helpdesk.py
+
+How to Run It---> Make sure Ollama is running:
+
+        ollama serve
+        python3 zombie_helpdesk.py
+
+How is it working?????
+
+
+Nice Mini-Challenges for Students
+
+Here are good follow-up exercises.
+
+Challenge 1:  Use different models for story and game master.
+
+Example:
+        Story model = llama3.2
+        GM model = mistral
+
+
+
+
+
 
 
