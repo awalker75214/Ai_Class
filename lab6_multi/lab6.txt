@@ -1,0 +1,49 @@
+Story Premise
+
+You are a help desk engineer.  Tickets begin coming in from a corporate office where strange things are happening:
+
+badge readers fail
+    users hear groaning in the server room
+    someone in Facilities hasn’t blinked in 20 minutes
+    coffee machines are behaving in deeply suspicious ways
+    sysadmins are moving slowly but with great determination
+
+It may be:
+    malware
+    a facilities problem
+    a biological incident
+    or, unfortunately, zombies
+
+🧱 Architecture
+LLM 1 — Story Generator
+
+This LLM writes the narrative scene.
+
+It handles:
+    mood
+    humor
+    creepy events
+    office absurdity
+
+LLM 2 — Game Master
+
+This LLM reads the scene and outputs structured game state.
+
+It decides:
+    threat level
+    whether the office is safe
+    whether security/facilities/IR should be called
+    what the next choices are
+
+Suggested Project StructureL Inside your project folder:
+
+    mkdir -p zombie_helpdesk
+    cd zombie_helpdesk
+    touch zombie_helpdesk.py
+
+🐍 Full Python Script
+
+Paste this into zombie_helpdesk.py
+
+
+
