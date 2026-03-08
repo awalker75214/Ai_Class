@@ -89,6 +89,9 @@ def main():
 print("\n☁️ Two-LLM Terraform Pipeline\n")
 
 
+if name == "main":
+main()
+
 
 This should be generated 
         generated_main.tf
